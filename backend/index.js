@@ -2,9 +2,15 @@ const mongoose = require("mongoose");
 
 require("dotenv").config();
 
-const config = require("./config.json");
+const connectionString = process.env.MONGODB_URI;
 
-mongoose.connect(config.ConnectionString);
+mongoose
+  .connect(connectionString, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((error) => console.error("Connection error:", error));
 
 const User = require("./models/user.model");
 const Note = require("./models/note.model");
@@ -278,7 +284,9 @@ app.put(
   }
 );
 
-app.listen(8000, () => {
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => {
   console.log("Server is running on port 8000");
 });
 
