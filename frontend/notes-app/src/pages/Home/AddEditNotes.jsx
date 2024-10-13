@@ -89,7 +89,7 @@ const AddEditNotes = ({
   };
 
   return (
-    <div className="relative p-10">
+    <div className="relative">
       <button
         className="w-10 h-10 rounded-full flex justify-center items-center absolute -top-3 -right-3 hover:bg-slate-300"
         onClick={onClose}

@@ -179,7 +179,7 @@ const Home = () => {
           content: { inset: "auto" },
         }}
         contentLabel="Add/Edit Notes Modal"
-        className="w-full xl:w-1/2 h-auto  bg-white rounded-md mx-auto  mt-2 p-5 overflow-auto"
+        className="w-full xl:w-1/2  bg-white rounded-md mx-auto  mt-2 p-5 overflow-auto"
       >
         <AddEditNotes
           type={openAddEditModal.type}
