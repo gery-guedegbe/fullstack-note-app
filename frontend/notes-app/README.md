@@ -7,7 +7,7 @@ Fullstack Note App is a web application that allows users to create, modify, del
 - **User Authentication**: Secure sign-up, login, and user session management.
 - **CRUD Operations**: Create, read, update, and delete notes effortlessly.
 - **Responsive Design**: Optimized for various screen sizes, including mobile and desktop.
-- **Note Pinning**: Easily pin important notes to the top of the list for quick access.
+- **Note Pinning**: Easily pin important notes to the top of the list for quick access
 - **Persistent Storage**: Notes are stored in a database, ensuring they are available whenever you log in.
 
 ## Tech Stack
